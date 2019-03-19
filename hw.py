@@ -88,7 +88,7 @@ with open('hmmmodel.txt', 'w') as outfile:
     
 result = []
 op = open("results.txt","w", encoding="utf-8")
-with open("C:/Users/Rakesh/Documents/data/en_dev_raw.txt", 'r', encoding="utf-8") as f:
+with open(sys.argv[2], 'r', encoding="utf-8") as f:
     for line in f:
         s = line.split()
         curr = []
